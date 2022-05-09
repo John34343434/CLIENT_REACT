@@ -7,7 +7,7 @@ const ProductItem = ({data}) => {
         <Col xl={3} lg={4} sm={6} className="mt-3" onClick={() => navigate(`/product/${data.id}`)}>
             <Card style={{width: 200, cursor: 'pointer'}}>
                 {data.image ? (
-                    <Card.Img variant="top" src={process.env.REACT_APP_IMG_URL + data.image} />
+                    <Card.Img variant="top" src={'https://server-part-suka.herokuapp.com/' + data.image} />
                 ) : (
                     <Card.Img variant="top" src="http://via.placeholder.com/200" />
                 )}

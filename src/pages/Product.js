@@ -31,7 +31,7 @@ const Product = () => {
             <Row className="mt-3 mb-3">
                 <Col lg={4}>
                     {product.image ? (
-                        <Image width={300} height={300} src={process.env.REACT_APP_IMG_URL + product.image} />
+                        <Image width={300} height={300} src={'https://server-part-suka.herokuapp.com/' + product.image} />
                     ) : (
                         <Image width={300} height={300} src="https://via.placeholder.com/300" />
                     )}
